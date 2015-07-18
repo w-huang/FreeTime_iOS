@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailScreenViewController.h"
 
 @interface ViewController ()
 
@@ -35,9 +36,11 @@ NSArray* data;
     //addTask button
     UIColor *colorOfButton = [[UIColor alloc] initWithRed:0.02 green:0.7 blue:0.7 alpha:1.0];
     UIButton *addTaskButton = [[UIButton alloc]initWithFrame:buttonFrame];
+    [addTaskButton addTarget:self action:@selector(addTaskButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [addTaskButton setTitle:@"Add Task" forState:UIControlStateNormal];
     [addTaskButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [addTaskButton setBackgroundColor: colorOfButton];
+    
     
     
     [self.view addSubview:addTaskButton];
@@ -50,7 +53,10 @@ NSArray* data;
     // Dispose of any resources that can be recreated.
 }
 
+
+//====================
 //datasource protocols
+//====================
 
 - (UITableViewCell *)tableView:tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //this was googled quickly; the only part that may require changing in the future is the identifier for reused cells.
@@ -94,7 +100,9 @@ NSArray* data;
     }
 }*/
 
+//==================
 //delegate protocols
+//==================
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     return nil;
@@ -112,7 +120,7 @@ NSArray* data;
     NSArray *list = @[@"Urgent and Important - Do it now",@"Important but not Urgent - Schedule it",@"Urgent but not important - Delegate it",@"Not important, Not urgent - Eliminate it."];
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 18)];
     /* Create custom view to display section header... */
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 22, tableView.frame.size.width, 18)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 21, tableView.frame.size.width, 18)];
     [label setFont:[UIFont boldSystemFontOfSize:18]];
     NSString *string =[list objectAtIndex:section];
     /* Section header is in 0th index... */
@@ -143,6 +151,29 @@ NSArray* data;
     [view setBackgroundColor: color]; //your background color...
     return view;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DetailScreenViewController *newViewController = [[DetailScreenViewController alloc] init];
+    [self presentViewController:newViewController animated:YES completion:nil];
+    return;
+    //load detail screen here
+    
+    
+}
+
+//====================
+//addTaskButtonPressed
+//====================
+
+- (void)addTaskButtonPressed{
+    CGRect frame = CGRectMake(350, 400, 100, 100);
+    UITextView *newView = [[UITextView alloc] initWithFrame:frame];
+    newView.text = @"hello!";
+    [self.view addSubview:newView];
+    return;
+}
+
 
 
 /*
