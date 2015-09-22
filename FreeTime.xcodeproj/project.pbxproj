@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01D4AE61B8159E100AD42D8 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B01D4AE51B8159E100AD42D8 /* DBManager.m */; };
+		B01D4AE91B815AC100AD42D8 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01D4AE81B815AC100AD42D8 /* AddTaskViewController.m */; };
+		B01D4AEC1B81774500AD42D8 /* notselectedcheckbox.png in Resources */ = {isa = PBXBuildFile; fileRef = B01D4AEA1B81774500AD42D8 /* notselectedcheckbox.png */; };
+		B01D4AED1B81774500AD42D8 /* selectedcheckbox.png in Resources */ = {isa = PBXBuildFile; fileRef = B01D4AEB1B81774500AD42D8 /* selectedcheckbox.png */; };
+		B01D4AEF1B81812200AD42D8 /* freeTimeDB.sql in Resources */ = {isa = PBXBuildFile; fileRef = B01D4AEE1B81812200AD42D8 /* freeTimeDB.sql */; };
+		B01D4AF11B81854B00AD42D8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B01D4AF01B81854B00AD42D8 /* libsqlite3.dylib */; };
+		B0B417041B575FB600C86B85 /* DetailScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B417031B575FB600C86B85 /* DetailScreenViewController.m */; };
+		B0B417071B5ACBDF00C86B85 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B417061B5ACBDF00C86B85 /* ToastView.m */; };
 		B0F1C9E01B24D2D2007AB2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1C9DF1B24D2D2007AB2B5 /* main.m */; };
 		B0F1C9E31B24D2D2007AB2B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1C9E21B24D2D2007AB2B5 /* AppDelegate.m */; };
 		B0F1C9E61B24D2D2007AB2B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1C9E51B24D2D2007AB2B5 /* ViewController.m */; };
@@ -27,6 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B01D4AE41B8159E100AD42D8 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = ../DBManager.h; sourceTree = "<group>"; };
+		B01D4AE51B8159E100AD42D8 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = ../DBManager.m; sourceTree = "<group>"; };
+		B01D4AE71B815AC100AD42D8 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		B01D4AE81B815AC100AD42D8 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		B01D4AEA1B81774500AD42D8 /* notselectedcheckbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notselectedcheckbox.png; sourceTree = "<group>"; };
+		B01D4AEB1B81774500AD42D8 /* selectedcheckbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedcheckbox.png; sourceTree = "<group>"; };
+		B01D4AEE1B81812200AD42D8 /* freeTimeDB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = freeTimeDB.sql; sourceTree = "<group>"; };
+		B01D4AF01B81854B00AD42D8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B0B417021B575FB600C86B85 /* DetailScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailScreenViewController.h; sourceTree = "<group>"; };
+		B0B417031B575FB600C86B85 /* DetailScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailScreenViewController.m; sourceTree = "<group>"; };
+		B0B417051B5ACBDF00C86B85 /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		B0B417061B5ACBDF00C86B85 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
 		B0F1C9DA1B24D2D2007AB2B5 /* FreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F1C9DE1B24D2D2007AB2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F1C9DF1B24D2D2007AB2B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01D4AF11B81854B00AD42D8 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 		B0F1C9D11B24D2D2007AB2B5 = {
 			isa = PBXGroup;
 			children = (
+				B01D4AF01B81854B00AD42D8 /* libsqlite3.dylib */,
 				B0F1C9DC1B24D2D2007AB2B5 /* FreeTime */,
 				B0F1C9F61B24D2D3007AB2B5 /* FreeTimeTests */,
 				B0F1C9DB1B24D2D2007AB2B5 /* Products */,
@@ -81,6 +103,10 @@
 		B0F1C9DC1B24D2D2007AB2B5 /* FreeTime */ = {
 			isa = PBXGroup;
 			children = (
+				B01D4AEB1B81774500AD42D8 /* selectedcheckbox.png */,
+				B01D4AEA1B81774500AD42D8 /* notselectedcheckbox.png */,
+				B01D4AE41B8159E100AD42D8 /* DBManager.h */,
+				B01D4AE51B8159E100AD42D8 /* DBManager.m */,
 				B0F1C9E11B24D2D2007AB2B5 /* AppDelegate.h */,
 				B0F1C9E21B24D2D2007AB2B5 /* AppDelegate.m */,
 				B0F1C9E41B24D2D2007AB2B5 /* ViewController.h */,
@@ -89,6 +115,13 @@
 				B0F1C9EA1B24D2D2007AB2B5 /* Images.xcassets */,
 				B0F1C9EC1B24D2D2007AB2B5 /* LaunchScreen.xib */,
 				B0F1C9DD1B24D2D2007AB2B5 /* Supporting Files */,
+				B0B417021B575FB600C86B85 /* DetailScreenViewController.h */,
+				B0B417031B575FB600C86B85 /* DetailScreenViewController.m */,
+				B0B417051B5ACBDF00C86B85 /* ToastView.h */,
+				B0B417061B5ACBDF00C86B85 /* ToastView.m */,
+				B01D4AE71B815AC100AD42D8 /* AddTaskViewController.h */,
+				B01D4AE81B815AC100AD42D8 /* AddTaskViewController.m */,
+				B01D4AEE1B81812200AD42D8 /* freeTimeDB.sql */,
 			);
 			path = FreeTime;
 			sourceTree = "<group>";
@@ -168,6 +201,7 @@
 				TargetAttributes = {
 					B0F1C9D91B24D2D2007AB2B5 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9ANX6SHGA5;
 					};
 					B0F1C9F21B24D2D3007AB2B5 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -201,7 +235,10 @@
 			files = (
 				B0F1C9E91B24D2D2007AB2B5 /* Main.storyboard in Resources */,
 				B0F1C9EE1B24D2D2007AB2B5 /* LaunchScreen.xib in Resources */,
+				B01D4AED1B81774500AD42D8 /* selectedcheckbox.png in Resources */,
+				B01D4AEC1B81774500AD42D8 /* notselectedcheckbox.png in Resources */,
 				B0F1C9EB1B24D2D2007AB2B5 /* Images.xcassets in Resources */,
+				B01D4AEF1B81812200AD42D8 /* freeTimeDB.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01D4AE91B815AC100AD42D8 /* AddTaskViewController.m in Sources */,
 				B0F1C9E61B24D2D2007AB2B5 /* ViewController.m in Sources */,
+				B0B417041B575FB600C86B85 /* DetailScreenViewController.m in Sources */,
 				B0F1C9E31B24D2D2007AB2B5 /* AppDelegate.m in Sources */,
+				B01D4AE61B8159E100AD42D8 /* DBManager.m in Sources */,
 				B0F1C9E01B24D2D2007AB2B5 /* main.m in Sources */,
+				B0B417071B5ACBDF00C86B85 /* ToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FreeTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +403,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FreeTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +465,7 @@
 				B0F1C9FF1B24D2D3007AB2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0F1CA001B24D2D3007AB2B5 /* Build configuration list for PBXNativeTarget "FreeTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +474,7 @@
 				B0F1CA021B24D2D3007AB2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
